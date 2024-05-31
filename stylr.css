@@ -1,0 +1,76 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* variios colores*/
+    background: linear-gradient(to top right, #46C2CB,#6D67E4, #6D67E4, #46C2CB);
+}
+
+
+.container {
+    margin: 80px auto;
+    padding: 20px;
+    max-width: 450px;
+    background-color: #46C2CB;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    /* Define el grosor del borde */
+    border: 2px solid; 
+    border-color: #F2F7A1; 
+}
+
+
+h1 {
+    text-align: center;
+    color: #453C67;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #453C67;
+}
+
+input, select, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #27aa96;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6D67E4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #35A29F;
+}
+
+h2 {
+    color: #453C67;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+

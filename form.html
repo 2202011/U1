@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Tareas</title>
+    <link rel="stylesheet" href="stylr.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Administrador de Tareas</h1>
+
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="tema">Tema:</label>
+                <input type="text" 
+                       id="tema" 
+                       required>
+            </div>
+            <label for="descripcion">Descripción:</label>
+            <div class="form-group">
+                <textarea 
+                       id="descripcion" 
+                       rows="6"
+                       maxlength="100" 
+                       name="observaciones" 
+                       required></textarea>
+
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date"
+                       id="fecha" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora:</label>
+                <input type="time" 
+                       id="hora" 
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="dia">Día:</label>
+                <select id="dia" required>
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miércoles">Miércoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sábado">Sábado</option>
+                    <option value="Domingo">Domingo</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Agregar Tarea</button>
+        </form>
+        <h2>Lista de Tareas</h2>
+        <ul id="taskList"></ul>
+        <button id="downloadPdf" class="btn">Descargar PDF</button>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
